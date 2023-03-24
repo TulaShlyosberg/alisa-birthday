@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Fedor Noskov</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="chaika.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="chaikas.css">
+    </head>
+    <body>
+        <div class="header_container">
+            <div class="header">
+                <div class="happy">С</div>
+                <div class="birthday">днем</div>
+                <div class="to_you">рожденья!</div>
+            </div>
+            <div class="alisa_and_chaika">
+                <div id="romantic_button">Сделать романтик</div>
+            </div>
+        </div>
+        <div class="congrats">
+            <img class="drinking_img"  src="img/drinking_1.jpg" alt="drinking" id="drinking_1"/>
+            <img class="drinking_img" src="img/drinking_3.jpg" alt="drinking" id="drinking_2"/>
+            <img class="drinking_img" src="img/drinking_4.jpg" alt="drinking" id="drinking_3"/>
+            <img class="drinking_img" src="img/drinking_5.jpg" alt="drinking" id="drinking_4"/>
+        </div>
+        <div id="drinking_toast">
+            Выбери, за что будем пить --- нажми на одно из фото
+        </div>
+    </body>
+    <script>
+        document.getElementById('romantic_button').onclick = romantic_chaika;
+        for(i = 1; i <=4; i++)
+            document.getElementById('drinking_' + i.toString()).onclick = toast;
+    </script>
+</html>
